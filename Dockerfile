@@ -6,4 +6,4 @@ COPY . .
 
 RUN ./gradlew build --no-daemon
 
-CMD ["java", "-jar", "build/libs/youtube-downloader-telegram-bot-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "build/libs/YDTbot-1.0-SNAPSHOT.jar"]
