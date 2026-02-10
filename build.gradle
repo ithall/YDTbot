@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    // NewPipeExtractor — на февраль 2026 актуальная версия v0.25.x (проверь на https://github.com/TeamNewPipe/NewPipeExtractor/releases)
+    implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.25.2'
+
+    // Telegram Bots — последняя стабильная 6.9.7.1 (проверь на https://mvnrepository.com/artifact/org.telegram/telegrambots)
+    implementation 'org.telegram:telegrambots:6.9.7.1'
+
+    // Для HTTP-запросов и скачивания файлов
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}
+
+application {
+    mainClass = 'org.example.YoutubeDownloaderBot'
+}
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
