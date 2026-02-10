@@ -2,7 +2,6 @@ package org.example;
 
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.ServiceList;
-import org.schabi.newpipe.extractor.downloader.OkHttpDownloader;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.VideoStream;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -27,7 +26,7 @@ public class YDTbot extends TelegramLongPollingBot {
     private static final String BOT_USERNAME = System.getenv("BOT_USERNAME");
 
     public YDTbot() {
-        NewPipe.init(OkHttpDownloader.builder().build());
+        NewPipe.init;
     }
 
     @Override
