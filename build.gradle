@@ -23,7 +23,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'org.example.YoutubeDownloaderBot'
+    mainClass = 'org.example.YDTbot'
 }
 
 sourceCompatibility = '17'
