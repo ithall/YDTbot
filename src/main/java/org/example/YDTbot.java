@@ -26,7 +26,7 @@ public class YDTbot extends TelegramLongPollingBot {
     private static final String BOT_USERNAME = System.getenv("BOT_USERNAME");
 
     public YDTbot() {
-        NewPipe.init;
+        NewPipe.init();
     }
 
     @Override
